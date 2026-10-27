@@ -1,0 +1,6 @@
+.idea/
+.venv/
+__pycache__/
+.pytest_cache/
+# allure-results коммитим принудительно: git add -f allure-results/.
+allure-results/
