@@ -9,7 +9,7 @@ import helpers
 class TestCreateCourier:
 
     @allure.title("Курьера можно создать: код 201 и тело {'ok': true}")
-    def test_create_courier_success(self, courier_payload):
+    def test_create_courier_success(self, courier_payload, courier_cleanup):
         response = helpers.create_courier(courier_payload)
 
         assert response.status_code == 201
